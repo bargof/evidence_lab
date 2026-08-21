@@ -1,0 +1,15 @@
+{
+  "equipo": {
+    "sistema": "Windows 11",
+    "procesador": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "python": "3.12.10"
+  },
+  "retrieval": {
+    "media_s": 0.74,
+    "max_s": 0.784
+  },
+  "generacion": {
+    "error": "Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download"
+  },
+  "memoria_pico_mb": 1717
+}

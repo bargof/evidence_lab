@@ -1,0 +1,8 @@
+entity_types:
+  - person
+  - group
+  - organization
+  - location
+  - vehicle
+  - object
+  - document
