@@ -11,3 +11,7 @@ logs/
 .DS_Store
 .ipynb_checkpoints/
 mlruns/
+data/
+reports/
+docs/
+documentation.md
