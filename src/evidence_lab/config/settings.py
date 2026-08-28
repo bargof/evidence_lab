@@ -39,6 +39,11 @@ class Settings(BaseSettings):
     ollama_timeout: float = Field(default=180.0, gt=0)
     generation_temperature: float = Field(default=0.0, ge=0.0, le=2.0)
     generation_num_predict: int = Field(default=700, gt=0)
+    # Ollama usa una ventana de contexto pequeña por defecto, sin importar
+    # que el modelo soporte mucho más. Con 6 fragmentos de evidencia más el
+    # system prompt se rebasa, y el modelo pierde en silencio las
+    # instrucciones o parte de la evidencia. Se fija explícitamente.
+    ollama_num_ctx: int = Field(default=8192, gt=0)
 
     # --- Embeddings ---
     # e5-base (278M) sobre bge-m3 (568M): el índice y las consultas corren en
