@@ -11,7 +11,6 @@ logs/
 .DS_Store
 .ipynb_checkpoints/
 mlruns/
-data/
-documentation.md
-prompts/
-/data
+# Solo el corpus de la raiz. Sin la barra inicial, el patron tambien
+# excluiria src/evidence_lab/data/, que es codigo.
+/data/
