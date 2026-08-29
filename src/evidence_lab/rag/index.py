@@ -15,6 +15,7 @@ import numpy as np
 
 from evidence_lab.config.settings import EMBEDDING_PASSAGE_PREFIX, get_settings
 from evidence_lab.rag.corpus import Chunk, load_chunks, normalize
+from evidence_lab.rag.devices import pick_device
 
 _settings = get_settings()
 
@@ -112,7 +113,7 @@ class HybridIndex:
 def _encode_passages(texts: list[str], model_name: str, batch_size: int):
     from sentence_transformers import SentenceTransformer
 
-    model = SentenceTransformer(model_name, device="cpu")
+    model = SentenceTransformer(model_name, device=pick_device())
     prefixed = [EMBEDDING_PASSAGE_PREFIX + t for t in texts]
     return model.encode(
         prefixed,

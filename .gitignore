@@ -12,8 +12,6 @@ logs/
 .ipynb_checkpoints/
 mlruns/
 data/
-reports/
-docs/
 documentation.md
 prompts/
 /data

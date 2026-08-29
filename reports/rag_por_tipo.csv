@@ -1,0 +1,6 @@
+tipo,preguntas,recall@5,mrr
+contradiction,4,0.5,0.125
+factual,11,0.6364,0.4394
+gap,2,0.5,0.5833
+modality,7,0.7143,0.3095
+outcome,9,0.2222,0.0593

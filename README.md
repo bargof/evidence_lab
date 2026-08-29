@@ -42,6 +42,15 @@ no deben salir del equipo.
 Lo único que toca la red es la descarga inicial de los modelos. Después de eso
 funciona con el wifi apagado.
 
+### Aceleración por GPU
+
+Los modelos de embeddings y re-ranking detectan el dispositivo solos: **MPS** en
+Mac con Apple Silicon, **CUDA** si hay GPU NVIDIA, y CPU en lo demás. El mensaje
+de arranque dice cuál está usando. Se puede forzar con `EVIDENCELAB_DEVICE`.
+
+La generación no depende de eso: la sirve Ollama, que usa Metal o CUDA por su
+cuenta.
+
 ### Si vas justo de memoria
 
 En un equipo de 8 GB, copia `.env.example` a `.env` y ajusta:

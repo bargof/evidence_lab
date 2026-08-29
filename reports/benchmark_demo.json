@@ -1,0 +1,18 @@
+{
+  "equipo": {
+    "sistema": "Windows 11",
+    "procesador": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "python": "3.12.10"
+  },
+  "retrieval": {
+    "media_s": 0.759,
+    "max_s": 0.867
+  },
+  "generacion": {
+    "modelo": "llama3.2:3b",
+    "tokens_generados": 51,
+    "segundos": 5.55,
+    "tokens_por_segundo": 9.2
+  },
+  "memoria_pico_mb": 1706
+}

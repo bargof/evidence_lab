@@ -1,0 +1,4 @@
+technique,base_model,params_b,trainable_params_m,trainable_pct,rank,eval_loss,time_seconds,peak_vram_gb,valid_json_rate,schema_exact_rate,exact_json_rate
+Full SFT,microsoft/Phi-4-mini-instruct,3.836,3836.0,100.0,,0.2742360532,761.503,14.037329,,,
+LoRA,meta-llama/Llama-3.2-3B-Instruct,3.21,24.326886,0.7578469158878505,16.0,0.1567792445421219,667.95823222,8.425573825836182,1.0,1.0,0.2
+QLoRA,meta-llama/Llama-3.2-3B-Instruct,3.21,97.268616,3.030174953271028,64.0,0.097523309290409,784.3473067579998,7.302552700042725,1.0,1.0,0.2

@@ -1,0 +1,6 @@
+iteracion,capas,recall@1,recall@3,recall@5,recall@10,mrr,precision_de_caso,segundos_por_consulta
+v1_dense,dense,0.0,0.0,0.0,0.0303,0.0051,0.2475,0.378
+v2_hybrid,dense+bm25,0.0,0.0303,0.0303,0.0303,0.0152,0.2576,0.023
+v3_hybrid_metadata,dense+bm25+metadata,0.1515,0.2424,0.2424,0.2727,0.197,1.0,0.024
+v4_hybrid_metadata_rerank,dense+bm25+metadata+rerank,0.2424,0.2727,0.3333,0.3333,0.2662,1.0,0.896
+v5_con_antecedentes,dense+bm25+metadata+rerank+antecedentes,0.1515,0.3636,0.5152,0.5455,0.2788,1.0,0.757

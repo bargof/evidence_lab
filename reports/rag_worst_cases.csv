@@ -1,0 +1,11 @@
+golden_id,tipo,pregunta,esperado,recuperado_top5,rank
+GV2-002,modality,¿Hubo alguna admisión de participación ante la autoridad policial?,CASE-MX-001-DOC-001 p.9,"p.1, p.2, p.3, p.25, p.13",
+GV2-003,factual,¿Contó con abogado la persona acusada al momento de declarar ante la policía?,CASE-MX-001-DOC-001 p.9,"p.1, p.2, p.3, p.24, p.30",
+GV2-004,modality,¿La defensa planteó que hubiera habido tortura?,CASE-MX-001-DOC-001 p.64,"p.1, p.2, p.3, p.31, p.29",
+GV2-005,outcome,¿Qué resolvió finalmente el tribunal sobre el amparo?,CASE-MX-001-DOC-001 p.64,"p.1, p.2, p.4, p.4, p.3",
+GV2-013,outcome,¿Qué ocurrió con el recurso de revisión?,CASE-MX-003-DOC-001 p.44,"p.1, p.2, p.3, p.32, p.26",
+GV2-014,factual,¿Acompañada de quién salió la víctima del bar?,CASE-MX-004-DOC-001 p.17,"p.1, p.2, p.3, p.122, p.65",
+GV2-015,factual,¿Alguien aportó datos a la investigación sin identificarse?,CASE-MX-004-DOC-001 p.18,"p.1, p.2, p.3, p.29, p.17",
+GV2-016,factual,¿Qué tipo de análisis realizaron los peritos?,CASE-MX-004-DOC-001 p.18,"p.1, p.2, p.3, p.87, p.91",
+GV2-017,outcome,¿Cuál fue la decisión final sobre el amparo?,CASE-MX-004-DOC-001 p.158,"p.1, p.2, p.3, p.11, p.12",
+GV2-021,outcome,¿Qué determinó la Suprema Corte en este asunto?,CASE-MX-005-DOC-001 p.42,"p.1, p.2, p.3, p.23, p.20",

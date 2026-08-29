@@ -21,6 +21,7 @@ from evidence_lab.application.services.answer_service import (
 from evidence_lab.config.settings import get_settings
 from evidence_lab.data.schemas import RetrievalDebug
 from evidence_lab.rag.corpus import load_cases
+from evidence_lab.rag.devices import describe_device
 
 _settings = get_settings()
 
@@ -411,7 +412,10 @@ def main() -> None:
     service = AnswerService()
 
     elapsed = service.warmup()
-    print(f"Listo en {elapsed:.1f} s · {len(service.index)} fragmentos indexados")
+    print(
+        f"Listo en {elapsed:.1f} s · {len(service.index)} fragmentos "
+        f"indexados · embeddings en {describe_device()}"
+    )
 
     if not generation.is_available():
         print(

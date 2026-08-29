@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 from evidence_lab.config.settings import get_settings  # noqa: E402
 from evidence_lab.rag.corpus import load_chunks  # noqa: E402
+from evidence_lab.rag.devices import describe_device  # noqa: E402
 from evidence_lab.rag.index import build_index  # noqa: E402
 
 
@@ -34,7 +35,7 @@ def main() -> int:
     chunks = load_chunks()
     cases = sorted({chunk.case_id for chunk in chunks})
     print(f"Corpus: {len(chunks)} chunks de {len(cases)} casos")
-    print(f"Embeddings: {args.embedding_model} (CPU)")
+    print(f"Embeddings: {args.embedding_model} ({describe_device()})")
 
     started = time.perf_counter()
     index = build_index(

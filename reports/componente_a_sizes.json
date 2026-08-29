@@ -1,0 +1,8 @@
+{
+  "lora_adapter_gb": 0.10670960415154696,
+  "qlora_adapter_gb": 0.3784387242048979,
+  "lora_params_m": 24.326886,
+  "qlora_params_m": 97.268616,
+  "merged_fp16_gb": 6.000339447520673,
+  "merged_fp16_source": "medido en la corrida (notebook 03, celda 35)"
+}

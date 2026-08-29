@@ -1,0 +1,112 @@
+{
+  "iteraciones": [
+    {
+      "preguntas": 33,
+      "mrr": 0.0051,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0303,
+      "precision_de_caso": 0.2475,
+      "iteracion": "v1_dense",
+      "capas": "dense",
+      "segundos_total": 12.5,
+      "segundos_por_consulta": 0.378
+    },
+    {
+      "preguntas": 33,
+      "mrr": 0.0152,
+      "recall@1": 0.0,
+      "recall@3": 0.0303,
+      "recall@5": 0.0303,
+      "recall@10": 0.0303,
+      "precision_de_caso": 0.2576,
+      "iteracion": "v2_hybrid",
+      "capas": "dense+bm25",
+      "segundos_total": 0.8,
+      "segundos_por_consulta": 0.023
+    },
+    {
+      "preguntas": 33,
+      "mrr": 0.197,
+      "recall@1": 0.1515,
+      "recall@3": 0.2424,
+      "recall@5": 0.2424,
+      "recall@10": 0.2727,
+      "precision_de_caso": 1.0,
+      "iteracion": "v3_hybrid_metadata",
+      "capas": "dense+bm25+metadata",
+      "segundos_total": 0.8,
+      "segundos_por_consulta": 0.024
+    },
+    {
+      "preguntas": 33,
+      "mrr": 0.2662,
+      "recall@1": 0.2424,
+      "recall@3": 0.2727,
+      "recall@5": 0.3333,
+      "recall@10": 0.3333,
+      "precision_de_caso": 1.0,
+      "iteracion": "v4_hybrid_metadata_rerank",
+      "capas": "dense+bm25+metadata+rerank",
+      "segundos_total": 29.6,
+      "segundos_por_consulta": 0.896
+    },
+    {
+      "preguntas": 33,
+      "mrr": 0.2788,
+      "recall@1": 0.1515,
+      "recall@3": 0.3636,
+      "recall@5": 0.5152,
+      "recall@10": 0.5455,
+      "precision_de_caso": 1.0,
+      "iteracion": "v5_con_antecedentes",
+      "capas": "dense+bm25+metadata+rerank+antecedentes",
+      "segundos_total": 25.0,
+      "segundos_por_consulta": 0.757
+    }
+  ],
+  "por_tipo": {
+    "contradiction": {
+      "preguntas": 4,
+      "mrr": 0.125,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.5,
+      "recall@10": 0.5
+    },
+    "factual": {
+      "preguntas": 11,
+      "mrr": 0.4394,
+      "recall@1": 0.2727,
+      "recall@3": 0.6364,
+      "recall@5": 0.6364,
+      "recall@10": 0.6364
+    },
+    "gap": {
+      "preguntas": 2,
+      "mrr": 0.5833,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0
+    },
+    "modality": {
+      "preguntas": 7,
+      "mrr": 0.3095,
+      "recall@1": 0.1429,
+      "recall@3": 0.4286,
+      "recall@5": 0.7143,
+      "recall@10": 0.7143
+    },
+    "outcome": {
+      "preguntas": 9,
+      "mrr": 0.0593,
+      "recall@1": 0.0,
+      "recall@3": 0.1111,
+      "recall@5": 0.2222,
+      "recall@10": 0.2222
+    }
+  },
+  "mejor": "v5_con_antecedentes"
+}

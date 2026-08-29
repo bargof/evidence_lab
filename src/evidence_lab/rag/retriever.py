@@ -13,6 +13,7 @@ import numpy as np
 
 from evidence_lab.config.settings import EMBEDDING_QUERY_PREFIX, get_settings
 from evidence_lab.rag.corpus import Chunk, normalize
+from evidence_lab.rag.devices import pick_device
 from evidence_lab.rag.index import HybridIndex, tokenize
 
 _settings = get_settings()
@@ -100,14 +101,14 @@ class RetrievedChunk:
 def _query_encoder(model_name: str):
     from sentence_transformers import SentenceTransformer
 
-    return SentenceTransformer(model_name, device="cpu")
+    return SentenceTransformer(model_name, device=pick_device())
 
 
 @lru_cache(maxsize=2)
 def _cross_encoder(model_name: str):
     from sentence_transformers import CrossEncoder
 
-    return CrossEncoder(model_name, device="cpu", max_length=512)
+    return CrossEncoder(model_name, device=pick_device(), max_length=512)
 
 
 def _rrf(rankings: list[list[int]], k: int = _settings.rrf_k) -> dict[int, float]:
